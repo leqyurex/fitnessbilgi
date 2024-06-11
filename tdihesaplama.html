@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalori Hesaplama</title>
+    <link rel="stylesheet" href="tdihesaplama.css">
+    <script defer src="tdihesaplama.js"></script>
+</head>
+<body class="contact-body">
+    <div class="pageloader is-active"><span class="title"><h3><b>YÜKLENİYOR...</b></h3></span></div>
+    <script>
+        window.addEventListener('load', function () {
+            var pageloader = document.querySelector('.pageloader');
+            pageloader.classList.add('fade-out');
+            setTimeout(function () {
+                pageloader.style.display = 'none';
+            }, 1000); // 1 saniye sonra tamamen kaybolur
+        });
+    </script>
+    <header>
+        <h1>Kalori Hesaplama</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="#">Hakkında</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Günlük Kalori İhtiyacı Hesaplama</h2>
+            <form id="calorie-form">
+                <label for="weight">Kilo (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+
+                <label for="height">Boy (cm):</label>
+                <input type="number" id="height" name="height" required>
+
+                <label for="age">Yaş:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="activity">Aktivite Seviyesi:</label>
+                <select id="activity" name="activity">
+                    <option value="1.2">Az aktif</option>
+                    <option value="1.375">Hafif aktif</option>
+                    <option value="1.55">Orta aktif</option>
+                    <option value="1.725">Çok aktif</option>
+                    <option value="1.9">Aşırı aktif</option>
+                </select>
+
+                <button type="button" onclick="calculateCalories()">Hesapla</button>
+                <div id="form-status"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kalori Hesaplama. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

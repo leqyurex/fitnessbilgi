@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İleri Seviye Antrenman Programı</title>
+    <link rel="stylesheet" href="ileriseviyeantrenman.css">
+    <script defer src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link" href="index.html"><strong>Anasayfa</strong></a></li>
+                <li class="nav-item"><a class="nav-link" href="guides.html"><strong>Rehberler</strong></a></li>
+                <li class="nav-item"><a class="nav-link" href="workouts.html"><strong>Antrenmanlar</strong></a></li>
+                <li class="nav-item"><a class="nav-link" href="weightloss.html"><strong>Yağ Kaybı</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="pageloader is-active"><span class="title">YÜKLENİYOR...</span></div>
+    <script>
+        window.addEventListener('load', function () {
+            var pageloader = document.querySelector('.pageloader');
+            pageloader.classList.add('fade-out');
+            setTimeout(function () {
+                pageloader.style.display = 'none';
+            }, 1000); // 1 saniye sonra tamamen kaybolur
+        });
+    </script>
+
+    <section id="workout-program" class="info-section">
+        <h2>İleri Seviye Antrenman Programı</h2>
+        <p>Bu program, spor salonunda deneyimli olan ve kas kütlesini artırmayı hedefleyenler için tasarlanmıştır.
+            Amacınız, daha yüksek ağırlıklarla çalışarak kaslarınızı zorlamak ve ileri seviye tekniklerle antrenmanınızı
+            çeşitlendirmek olacaktır.</p>
+        <br><br>
+        <aside class="importantnote">
+            <h3><b>Set sayısı ve tekrar sayısı bu programda neden değişmedi?</b> ağırlıklarınızı, yani haltere taktığınız ağırlığı değiştirmediğiniz sürece
+                kaslarınızın büyüme hızı yavaşlayacak hatta duracaktır. Kaslarınızın gelişmesi için yeni zorluklarla
+                karşılaşması ve adapte olması gerekmektedir. Bu nedenle, düzenli olarak ağırlıklarınızı artırarak ve
+                egzersiz programınızı değiştirerek vücudunuzu şaşırtın. Ayrıca, doğru beslenme ve yeterli dinlenme de
+                kas gelişimi için önemlidir.
+
+                Önerim, egzersiz programınızı her 4-6 haftada bir değiştirmeniz ve ağırlık, set sayısı ve tekrar
+                sayısını artırmanızdır. Bu şekilde, kaslarınız sürekli olarak yeni uyarılara maruz kalacak ve büyümeye
+                devam edecektir.</h3>>
+        </aside>
+        <h2 class="solacekh3"><b>Haftalık Program:</b></h2>
+        <br><br>
+        <table class="table is-fullwidth">
+            <thead>
+                <tr class="hafifsaga">
+                    <th>Gün</th>
+                    <th>Egzersiz</th>
+                    <th>Set</th>
+                    <th>Tekrar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="grey-text"><b>Pazartesi</b></td>
+                    <td class="grey-text"><b>Göğüs ve Triceps</b></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="grey-text">Bench Press</td>
+                    <td class="grey-text">4</td>
+                    <td class="grey-text">10</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="grey-text">Incline Dumbbell Press</td>
+                    <td class="grey-text">4</td>
+                    <td class="grey-text">10</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="grey-text">Triceps Dips</td>
+                    <td class="grey-text">4</td>
+                    <td class="grey-text">10</td>
+                </tr>
+                <tr>
+                    <td class="grey-text"><b>Salı</b></td>
+                    <td class="grey-text"><b>Sırt ve Biceps</b></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="grey-text">Pull-Ups</td>
+                    <td class="grey-text">4</td>
+                    <td class="grey-text">10</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="grey-text">Bent Over Row</td>
+                    <td class="grey-text">4</td>
+                    <td class="grey-text">10</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="grey-text">Bicep Curls</td>
+                    <td class="grey-text">4</td>
+                    <td class="grey-text">10</td>
+                </tr>
+                <tr>
+                    <td class="grey-text"><b>Çarşamba</b></td>
+                    <td class="grey-text">Dinlenme</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="grey-text"><b>Perşembe</b></td>
+                    <td class="grey-text"><b>Omuz ve Karın Hareketleri</b></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="grey-text">Shoulder Press</td>
+                    <td class="grey-text">4</td>
+                    <td class="grey-text">10</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="grey-text">Lateral Raises</td>
+                    <td class="grey-text">4</td>
+                    <td class="grey-text">10</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="grey-text">Plank</td>
+                    <td class="grey-text">4</td>
+                    <td class="grey-text">1 dakika</td>
+                </tr>
+                <tr>
+                    <td class="grey-text"><b>Cuma</b></td>
+                    <td class="grey-text"><b>Bacak</b></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="grey-text">Squat</td>
+                    <td class="grey-text">4</td>
+                    <td class="grey-text">10</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="grey-text">Leg Press</td>
+                    <td class="grey-text">4</td>
+                    <td class="grey-text">10</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="grey-text">Calf Raises</td>
+                    <td class="grey-text">4</td>
+                    <td class="grey-text">15</td>
+                </tr>
+                <tr>
+                    <td class="grey-text"><b>Cumartesi</b></td>
+                    <td class="grey-text"><b>Kardiyo</b></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="grey-text">Koşu Bandı</td>
+                    <td class="grey-text">1</td>
+                    <td class="grey-text">30 dakika</td>
+                </tr>
+                <tr>
+                    <td class="grey-text"><b>Pazar</b></td>
+                    <td class="grey-text"><b>Dinlenme</b></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>İleri Seviye Tavsiyeler:</h2>
+        <ul>
+            <li>Her egzersizden önce iyi bir ısınma yapmayı unutmayın. Isınma, sakatlanmaları önler ve performansınızı
+                artırır.</li>
+            <li>Yüksek ağırlıklarla çalışırken doğru formu koruyun. Aksi takdirde sakatlanma riski artar.</li>
+            <li>Egzersiz sırasında ve sonrasında yeterli protein ve su alımına özen gösterin. Kaslarınızın onarımı ve
+                büyümesi için bu önemlidir.</li>
+            <li>Dinlenme günlerinde aktif dinlenme yapabilirsiniz. Hafif yürüyüşler veya yoga gibi aktiviteler tercih
+                edilebilir.</li>
+            <li>Ağrı ve yorgunluk durumunda vücudunuzu dinleyin ve gerektiğinde antrenman programınızı esnetin.</li>
+        </ul>
+
+        <aside class="info-notes">
+            <h3>Sakatlanma Önleme:</h3>
+            <p>Sakatlanma riskini azaltmak için hareketleri kontrollü bir şekilde yapın ve aşırı zorlamadan kaçının.
+                Özellikle ağırlık çalışırken, partnerinizle veya bir eğitmenle çalışmanız güvenliğinizi artırabilir.
+                Egzersiz sırasında ağrı veya rahatsızlık hissederseniz hemen durun ve bir uzmana danışın. Esneme ve
+                esneklik egzersizleri yaparak kaslarınızı esnetin ve esnekliğinizi artırın. Ayrıca, düzenli olarak
+                egzersiz programınızı değiştirerek vücudunuzu şaşırtın ve rutin bir şekilde ilerlemeyi engelleyin.</p>
+        </aside>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <h3></h3>
+            <p>Spor hakkında en doğru bilgiyi burada bulabilirsiniz.</p>
+            <ul class="socials">
+                <li class="facebook-icon"><a href="https://facebook.com/"><img
+                            src="https://w7.pngwing.com/pngs/201/462/png-transparent-computer-icons-facebook-facebook-logo-black-and-white-symbol-thumbnail.png"
+                            alt="Facebook"></a></li>
+                <li class="x-icon"><a href="https://x.com/"><img
+                            src="https://w7.pngwing.com/pngs/515/1/png-transparent-twitter-logo-computer-icons-logo-twitter-icon-computer-wallpaper-monochrome-bird-thumbnail.png"
+                            alt="Twitter"></a></li>
+                <li class="instagram-icon"><a href="https://instagram.com/egeeilkee"><img
+                            src="https://w7.pngwing.com/pngs/815/101/png-transparent-www-mevrouwpak-nl-advertising-graphic-design-instagram-instagram-logo-business-advertising-thumbnail.png"
+                            alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

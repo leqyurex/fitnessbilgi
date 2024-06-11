@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spor Bilgi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+
+    <!-- PAGELOADER BURDA-->
+    <div class="pageloader is-active"><span class="title"></span></div>
+    <script>
+        window.addEventListener('load', function () {
+            var pageloader = document.querySelector('.pageloader');
+            pageloader.classList.remove('is-active');
+        });
+    </script>
+
+    <header>
+        <nav class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="margin-right: 1px;" style="display:flex;">
+                <li class="nav-item"><a class="nav-link" href="#home"><strong>Anasayfa</strong></a></li>
+                <li class="nav-item"><a class="nav-link" href="#guides"><strong>Rehberler</strong></a></li>
+                <li class="nav-item"><a class="nav-link" href="#workouts"><strong>Antrenmanlar</strong></a></li>
+                <li class="nav-item"><a class="nav-link" href="yagkaybi.html"><strong>Yağ Kaybı</strong></a></li>
+                <li class="nav-item"><a class="nav-link" href="yagoranihesaplama.html"><strong>Yağ Oranı Hesaplama</strong></a></li>
+                <li class="nav-item"><a class="nav-link" href="tdihesaplama.html"><strong>TDI Hesaplama</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Hoşgeldiniz</h1>
+            <p>Sporla ilgili her türlü bilgi ve rehberi burada bulabilirsiniz</p>
+            <a href="#guides" class="cta-button1"><strong>Rehberlere Göz Atın</strong></a>
+        </div>
+    </section>
+
+    <section id="guides" class="info-section">
+        <h2><strong>Rehberler</strong></h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="yenibaslayanlaricin.html"><img
+                        src="https://blog.ulike.com/wp-content/uploads/2023/07/Top_Male_Fitness_Influencers_on_Instagram.jpg"
+                        alt="Fitness Rehberi"></a>
+                <div class="overlay">Fitness: Yeni Başlayanlar İçin</div>
+            </div>
+            <div class="grid-item">
+                <a href="supplements.html"><img
+                        src="https://5.imimg.com/data5/ZC/IF/UZ/SELLER-34327080/protein-powder-supplement.jpg"
+                        alt="Supplement Rehberi"></a>
+                <div class="overlay">Supplement Rehberi</div>
+            </div>
+            <div class="grid-item">
+                <a href="weightloss.html"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_t-vXPGKGlFkIRrfwOcBFf28Dwglh6pc_Uso6cFaXvQ&s"
+                        alt="Kilo Verme"></a>
+                <div class="overlay">Kilo Verme</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="workouts" class="info-section">
+        <h2><b>Örnek Antrenmanlar</b></h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="yenibaslayanlaricin.html"> <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg" alt="Antrenman Programı 1"></a>
+                
+                <div class="overlay">Başlangıç Seviyesi Antrenman</div>
+            </div>
+            <div class="grid-item">
+                <a link href="ortaseviyeantrenman.html"><img src="https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg"
+                    alt="Antrenman Programı 2"></a>
+                <div class="overlay">Orta Seviye Antrenman</div>
+            </div>
+            <div class="grid-item">
+                <a link href="ileriseviyeantrenman.html"><img src="ileriseviye.jpg" alt="Antrenman Programı 2"></a>
+                <div class="overlay">İleri Seviye Antrenman</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nutrition" class="info-section">
+        <h2 class="nutrition-text"><b>Bizim önerdiğimiz diyet şekilleri aşağıda yer almaktadır</b></h2>
+        <div class="arrow-down"><span>&darr;</span></div>
+        <div class="nutrition-guides">
+            <h2><b>Beslenme Rehberi</b></h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="dusukkarbonhidrat.html"><img
+                            src="https://www.pinardemirkaya.com.tr/wp-content/uploads/2023/01/Dusuk-Karbonhidrat-Diyeti.jpg"
+                            alt="Düşük Karbonhidrat Diyeti"></a>
+                    <div class="overlay">Düşük Karbonhidrat Diyeti</div>
+                </div>
+                <div class="grid-item">
+                    <a href="ketojenik.html"><img
+                            src="https://www.medicalpark.com.tr/_uploads/_images/_healthGuide/5chZHif5.jpg"
+                            alt="Ketojenik Diyet"></a>
+                    <div class="overlay">Ketojenik Diyet</div>
+                </div>
+                <div class="grid-item">
+                    <a href="araliklioruc.html"><img
+                            src="https://www.mataramasu.co/cdn/shop/articles/aralikli-oruc-nedir.jpg?v=1673423888&width=2048"
+                            alt="Aralıklı Oruç Diyeti"></a>
+                    <div class="overlay">Aralıklı Oruç Diyeti</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footi">
+        <div class="footer-content">
+            <h3></h3>
+            <p>Spor hakkında en doğru bilgiyi burada bulabilirsiniz.</p>
+            <ul class="socials">
+               
+                <li><a href="https://facebook.com/"><img
+                    src="https://w7.pngwing.com/pngs/201/462/png-transparent-computer-icons-facebook-facebook-logo-black-and-white-symbol-thumbnail.png"
+                    alt="Facebook"></a></li>
+            <li><a href="https://x.com/"><img
+                    src="https://w7.pngwing.com/pngs/515/1/png-transparent-twitter-logo-computer-icons-logo-twitter-icon-computer-wallpaper-monochrome-bird-thumbnail.png"
+                    alt="Twitter"></a></li>
+            <li><a href="https://instagram.com/egeeilkee"><img
+                    src="https://w7.pngwing.com/pngs/815/101/png-transparent-www-mevrouwpak-nl-advertising-graphic-design-instagram-instagram-logo-business-advertising-thumbnail.png"
+                    alt="Instagram"></a></li>
+        </ul>
+    </div>
+<div class="footer-bottom">
+    <p>&copy; 2024 SporBilgi. Tüm hakları saklıdır.</p>
+</div>
+</footer>
+<div class="contact-button">
+<a href="contact.html" class="btn btn-primary">İletişim</a>
+</div>
+ 
+</body>
+
+</html>

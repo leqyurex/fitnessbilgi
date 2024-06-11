@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spor Bilgi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="yagoranihesaplama.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+    <div class="pageloader is-active"><span class="title">YÜKLENİYOR...</span></div>
+    <script>
+        window.addEventListener('load', function () {
+            var pageloader = document.querySelector('.pageloader');
+            pageloader.classList.add('fade-out');
+            setTimeout(function () {
+                pageloader.style.display = 'none';
+            }, 250); // 1 saniye sonra tamamen kaybolur
+        });
+    </script>
+    <header>
+        <nav class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="margin-right: 1px;"
+                style="display:flex;">
+                <li class="nav-item"><a class="nav-link" href="index.html"><strong>Anasayfa</strong></a></li>
+                <li class="nav-item"><a class="nav-link" href="weightloss.html"><strong>Yağ Kaybı</strong></a></li>
+        </nav>
+    </header>
+
+    <!-- Diğer bölümler -->
+
+    <section id="body-fat-calculator" class="info-section">
+        <h2>Vücut Yağ Oranı Hesaplama</h2>
+        <p>Vücut yağ oranı, bir kişinin vücudundaki yağ miktarının toplam ağırlığa oranıdır. Bu oran, kişinin genel
+            sağlık durumu ve fitness seviyesini değerlendirmede önemli bir ölçüttür.</p>
+        <p>Definasyon ve bulk dönemleri sporcuların vücut yağ oranlarını yönetmeleri açısından önemlidir. Definasyon
+            döneminde, yağ kaybına odaklanılırken, bulk döneminde kas kütlesi artırılmaya çalışılır.</p>
+            <h2>Ölçüm Yaparken Dikkat Edilmesi Gerekenler:</h2>
+            
+                <li>Ölçümleri sabah, aç karnına yapmaya özen gösterin.</li>
+                <li>Bel ve boyun çevresi ölçümlerini doğru bir şekilde yapın.</li>
+                <li>Ölçüm yaparken gevşeyin ve doğal duruşunuzu koruyun.</li>
+                <br></br>
+            </ul>
+            <h2>İdeal Yağ Oranı Kaç Olmalı?</h2>
+            <p>İdeal vücut yağ oranı cinsiyete ve yaşa göre değişir. Genel olarak, erkekler için sağlıklı bir yağ oranı
+                %10-20, kadınlar için ise %20-30 arasında olmalıdır. Sporcular için bu oranlar daha düşük olabilir.</p>
+<br></br>
+        <form>
+            <div class="field">
+                <label class="label">Boy (cm):</label>
+                <div class="control">
+                    <input class="input" type="number" id="height" placeholder="Boyunuzu giriniz">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Bel Çevresi (cm):</label>
+                <div class="control">
+                    <input class="input" type="number" id="waist" placeholder="Bel çevrenizi giriniz">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Boyun Çevresi (cm):</label>
+                <div class="control">
+                    <input class="input" type="number" id="neck" placeholder="Boyun çevrenizi giriniz">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Kalça Çevresi (cm) (Kadınlar için):</label>
+                <br class="control">
+                    <input class="input" type="number" id="hip" placeholder="Kalça çevrenizi giriniz (opsiyonel)">
+                    <br> </br>
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <button type="button" class="button is-primary" onclick="calculateBodyFat()">Hesapla</button>
+                </div>
+            </div>
+        </form>
+        <div id="result" style="display:none;">
+            <h3><strong>Vücut Yağ Oranınız</strong></h3>
+            
+            <p id="bodyFatPercentage"></p>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3></h3>
+            <p>Spor hakkında en doğru bilgiyi burada bulabilirsiniz.</p>
+            <ul class="socials">
+                <li><a href="https://facebook.com/"><img
+                            src="https://w7.pngwing.com/pngs/201/462/png-transparent-computer-icons-facebook-facebook-logo-black-and-white-symbol-thumbnail.png"
+                            alt="Facebook"></a></li>
+                <li><a href="https://x.com/"><img
+                            src="https://w7.pngwing.com/pngs/515/1/png-transparent-twitter-logo-computer-icons-logo-twitter-icon-computer-wallpaper-monochrome-bird-thumbnail.png"
+                            alt="Twitter"></a></li>
+                <li><a href="https://instagram.com/egeeilkee"><img
+                            src="https://w7.pngwing.com/pngs/815/101/png-transparent-www-mevrouwpak-nl-advertising-graphic-design-instagram-instagram-logo-business-advertising-thumbnail.png"
+                            alt="Instagram"></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SporBilgi. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <div class="contact-button">
+        <a href="contact.html" class="btn btn-primary">İletişim</a>
+    </div>
+    
+</body>
+
+</html>

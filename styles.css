@@ -1,0 +1,325 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Yeni eklenen satır */
+    margin-right: 20px; /* Değiştirildi */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero-section {
+    background: url('https://hotelrivierastrand.se/en/app/uploads/sites/4/gym-personlig-tranare-6N9A3435-1920x600.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.info-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    position: relative;
+    margin: 10px;
+}
+
+.grid-item img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.grid-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+}
+
+.grid-item:hover img {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    padding: -10px 0;
+}
+
+.footer-content h3 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.footer-content p {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.socials {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials li a img {
+    width: 48px;
+    height: 48px;
+}
+
+/* Nutrition Guide Section */
+.nutrition-guides {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.nutrition-guides h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nutrition-guides .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Değiştirildi */
+    gap: 20px;
+}
+
+.nutrition-guides .grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.nutrition-guides .grid-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.nutrition-guides .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Contact Button */
+.contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.contact-button .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Arrow Down in Nutrition Section */
+.arrow-down {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 4rem;
+}
+
+.arrow-down span {
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
+
+/* Animation for the arrow */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-20px);
+    }
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark-theme header {
+    background: #1c1c1c;
+}
+
+body.dark-theme .offcanvas-body {
+    background: #1c1c1c;
+}
+
+body.dark-theme .nav-link {
+    color: #bbb;
+}
+
+body.dark-theme .nav-link:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Mobile Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        margin-right: 20px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .footer-content h3 {
+        font-size: 24px;
+    }
+
+    .footer-content p {
+        font-size: 12px;
+    }
+
+    .socials li a img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
+
+    .arrow-down {
+        font-size: 3rem;
+    }
+
+    .offcanvas-body {
+        padding: 20px;
+    }
+
+    .offcanvas-body .nav-link {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contact-button .btn {
+        padding: 8px 16px;
+    }
+}
